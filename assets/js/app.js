@@ -45,11 +45,6 @@ var winPath = window.location.pathname.split('/');
         if (winPath[2] === "program" && split[0] === "#program") {
             $(this).addClass('active');
         }
-		
-		// Untuk halaman media
-        if (winPath[2] === "media" && split[0] === "#media") {
-            $(this).addClass('active');
-        }
 	});
 
 }).apply(this, [jQuery]);
