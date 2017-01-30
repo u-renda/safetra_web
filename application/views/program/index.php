@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Program</h1>
+                <h1><?php echo $program->name; ?></h1>
                 <ul class="breadcrumb breadcrumb-valign-mid">
                     <li><a href="<?php echo base_url(); ?>">Beranda</a></li>
                     <li class="active">Program</li>

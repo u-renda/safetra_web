@@ -20,7 +20,7 @@ class MY_Controller extends CI_Controller
         $about_us = '';
         if ($query->code == 200)
         {
-            $about_us = substr($query->row()->content, 0, 200);
+            $about_us = substr($query->result->content, 0, 200);
         }
         
         $query2 = $this->program_model->lists(array('order' => 'name', 'sort' => 'asc'));

@@ -94,7 +94,7 @@ class Home extends MY_Controller {
 		
 		if ($query->code == 200)
 		{
-			return $query->row();
+			return $query->result;
 		}
 		else
 		{
@@ -202,7 +202,7 @@ class Home extends MY_Controller {
 		
 		if ($query->code == 200)
 		{
-			return $query->row();
+			return $query->result;
 		}
 		else
 		{

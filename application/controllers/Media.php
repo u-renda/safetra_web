@@ -19,7 +19,7 @@ class Media extends MY_Controller {
 		{
 			$query = $this->article_model->info(array('slug' => $this->uri->segment(3)));
 			
-			if ($query->num_rows() > 0)
+			if ($query->code == 200)
 			{
 				$data = array();
 				$result = $query->row();
@@ -49,9 +49,9 @@ class Media extends MY_Controller {
 		$query = $this->article_model->lists(array('limit' => 5));
 		
 		$article = array();
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
-			foreach ($query->result() as $row)
+			foreach ($query->result as $row)
 			{
 				$strip = strip_tags($row->content);
 				$new_content = substr($strip, 0, 300);

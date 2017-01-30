@@ -32,14 +32,8 @@
                     ?>
                 </ul>
             </li>
-            <li class="dropdown nav-parent">
-                <a class="dropdown-toggle" href="#media">
-                    Media
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a></li>
-                    <!--<li><a href="<?php echo $this->config->item('link_gallery'); ?>">Galeri</a></li>-->
-                </ul>
+            <li class="nav-parent">
+                <a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a>
             </li>
             <li class="nav-parent">
                 <a href="<?php echo $this->config->item('link_about_us'); ?>">Tentang Kami</a>
@@ -47,9 +41,9 @@
             <li class="nav-parent">
                 <a href="<?php echo $this->config->item('link_contact_us'); ?>">Hubungi Kami</a>
             </li>
-            <li class="nav-parent">
+            <!--<li class="nav-parent">
                 <a href="<?php echo $this->config->item('link_login'); ?>">Login / Register</a>
-            </li>
+            </li>-->
         </ul>
     </nav>
 </div>

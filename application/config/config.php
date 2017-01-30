@@ -526,6 +526,7 @@ else
 }
 
 $config['email_admin'] = 'admin@safetra.co.id';
+$config['email_gmail'] = 'safetraindonesia@gmail.com';
 $config['email_marketing'] = 'marketing@safetra.co.id';
 $config['safetra_api'] = API_HOST;
 $config['safetra_address'] = 'Taman Mutiara, Jl. Bhakti No. A 3, Ciputat Kota, Tangerang Selatan';
