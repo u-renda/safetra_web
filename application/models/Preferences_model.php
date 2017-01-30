@@ -2,26 +2,56 @@
 
 class Preferences_model extends CI_Model {
 
-    var $table = 'preferences';
-    var $table_id = 'id_preferences';
-    
-    public function __construct()
+    var $page = 'preferences';
+
+    function __construct()
     {
         parent::__construct();
+        $this->key = array('api_key' => $this->config->item('safetra_key'));
     }
-    
-    function info($param)
+
+    function create($params)
     {
-        $where = array();
-        if (isset($param['name']) == TRUE)
-        {
-            $where += array('name' => $param['name']);
-        }
-        
-        $this->db->select('id_preferences, name, slug, content, created_date, updated_date');
-        $this->db->from($this->table);
-        $this->db->where($where);
-        $query = $this->db->get();
-        return $query;
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/create';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
+    }
+
+    function delete($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/delete';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
+    }
+
+    function info($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/info';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->get($url, $params);
+		return $result;
+    }
+
+    function lists($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/lists';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->get($url, $params);
+		return $result;
+    }
+
+    function update($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/update';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
     }
 }

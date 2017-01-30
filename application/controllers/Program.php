@@ -14,7 +14,7 @@ class Program extends MY_Controller {
 		$data = array();
 		$query = $this->program_sub_model->info(array('slug' => $this->uri->segment(2)));
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
 			$program = $query->row(); 
 		}

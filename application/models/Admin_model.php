@@ -2,50 +2,56 @@
 
 class Admin_model extends CI_Model {
 
-    var $table = 'admin';
-    var $table_id = 'id_admin';
-    
-    public function __construct()
+    var $page = 'admin';
+
+    function __construct()
     {
         parent::__construct();
+        $this->key = array('api_key' => $this->config->item('safetra_key'));
     }
-    
-    function lists($param)
+
+    function create($params)
     {
-        $where = array();
-        $order = 'created_date';
-        $sort = 'asc';
-        $offset = 0;
-        $limit = 20;
-        
-        if (isset($param['order']) == TRUE)
-        {
-            $order = $param['order'];
-        }
-        if (isset($param['sort']) == TRUE)
-        {
-            $sort = $param['sort'];
-        }
-        if (isset($param['limit']) == TRUE)
-        {
-            $limit = $param['limit'];
-        }
-        if (isset($param['offset']) == TRUE)
-        {
-            $offset = $param['offset'];
-        }
-        if (isset($param['role']) == TRUE)
-        {
-            $where += array('role' => $param['role']);
-        }
-        
-        $this->db->select('id_admin, name, username, email, photo, status, role, job_title,
-                          created_date, updated_date');
-        $this->db->from($this->table);
-        $this->db->where($where);
-        $this->db->order_by($order, $sort);
-        $this->db->limit($limit, $offset);
-        $query = $this->db->get();
-        return $query;
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/create';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
+    }
+
+    function delete($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/delete';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
+    }
+
+    function info($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/info';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->get($url, $params);
+		return $result;
+    }
+
+    function lists($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/lists';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->get($url, $params);
+		return $result;
+    }
+
+    function update($params)
+    {
+        $result = null;
+        $url = $this->config->item('safetra_api'). $this->page . '/update';
+        $params = array_merge($params, $this->key);
+        $result = $this->rest->post($url, $params);
+		return $result;
     }
 }

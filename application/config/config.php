@@ -515,9 +515,21 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/* Set Config API */
+if(is_bool(LOCALHOST) || LOCALHOST == 'localhost')
+{
+    define('API_HOST', 'http://localhost/safetra_api/');
+}
+else
+{
+	define('API_HOST', 'http://api.safetra.co.id/');
+}
+
 $config['email_admin'] = 'admin@safetra.co.id';
 $config['email_marketing'] = 'marketing@safetra.co.id';
+$config['safetra_api'] = API_HOST;
 $config['safetra_address'] = 'Taman Mutiara, Jl. Bhakti No. A 3, Ciputat Kota, Tangerang Selatan';
+$config['safetra_key'] = 'bd6fb882067e6ok56GR93376cd411ee';
 $config['safetra_phone'] = '(021) 29047017';
 $config['safetra_facebook'] = 'https://www.facebook.com/safetraID';
 $config['safetra_twitter'] = 'https://twitter.com/safetraID';

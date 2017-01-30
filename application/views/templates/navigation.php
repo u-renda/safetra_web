@@ -14,11 +14,11 @@
                     <?php
                     foreach ($program_nav as $key => $val)
                     {
-                        if (isset($val['program_sub']) == TRUE)
+                        if (count($val->program_sub) != 0)
                         {
-                            foreach ($val['program_sub'] as $row)
+                            foreach ($val->program_sub as $row)
                             {
-                                echo '<li class="dropdown-submenu"><a href="#">'.ucwords($val['name']).'</a>';
+                                echo '<li class="dropdown-submenu"><a href="#">'.ucwords($val->name).'</a>';
                                 echo '<ul class="dropdown-menu">';
                                 echo '<li><a href="'.$this->config->item('link_program').'/'.$row->slug.'">'.$row->name.'</a></li>';
                                 echo '</ul></li>';
@@ -26,7 +26,7 @@
                         }
                         else
                         {
-                            echo '<li><a href="'.$this->config->item('link_program').'/'.$val['slug'].'">'.ucwords($val['name']).'</a></li>';
+                            echo '<li><a href="'.$this->config->item('link_program').'/'.$val->slug.'">'.ucwords($val->name).'</a></li>';
                         }
                     }
                     ?>
@@ -38,7 +38,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a></li>
-                    <li><a href="<?php echo $this->config->item('link_gallery'); ?>">Galeri</a></li>
+                    <!--<li><a href="<?php echo $this->config->item('link_gallery'); ?>">Galeri</a></li>-->
                 </ul>
             </li>
             <li class="nav-parent">

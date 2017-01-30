@@ -21,9 +21,9 @@ class Home extends MY_Controller {
 		$query = $this->program_model->lists(array('order' => 'name', 'sort' => 'asc'));
 		
 		$program = array();
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
-			$program = $query->result();
+			$program = $query->result;
 		}
 		
 		$data['admin'] = $this->admin();
@@ -42,9 +42,9 @@ class Home extends MY_Controller {
 		$param['sort'] = 'asc';
 		$query = $this->admin_model->lists($param);
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
-			return $query->result();
+			return $query->result;
 		}
 		else
 		{
@@ -58,9 +58,9 @@ class Home extends MY_Controller {
 		$param['limit'] = 8;
 		$query = $this->client_model->lists($param);
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
-			return $query->result();
+			return $query->result;
 		}
 		else
 		{
@@ -92,7 +92,7 @@ class Home extends MY_Controller {
 	{
 		$query = $this->preferences_model->info(array('name' => 'mision'));
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
 			return $query->row();
 		}
@@ -108,10 +108,10 @@ class Home extends MY_Controller {
 		$param['limit'] = 3;
 		$query = $this->article_model->lists($param);
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
 			$result = array();
-			foreach ($query->result() as $row)
+			foreach ($query->result as $row)
 			{
 				$strip = strip_tags($row->content);
 				$new_content = substr($strip, 0, 300);
@@ -145,10 +145,10 @@ class Home extends MY_Controller {
 		$query = $this->article_model->lists($param);
 		$query2 = $this->media_model->lists($param);
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
 			$result = array();
-			foreach ($query->result() as $row)
+			foreach ($query->result as $row)
 			{
 				$explode = explode('.', $row->media);
 				
@@ -159,12 +159,12 @@ class Home extends MY_Controller {
 			}
 			
 			$result2 = array();
-			foreach ($query2->result() as $row2)
+			foreach ($query2->result as $row2)
 			{
 				$explode2 = explode('.', $row2->media_url);
 				
 				$temp2 = array();
-				$temp2['title'] = $row2->name;
+				$temp2['title'] = $row2->media_url;
 				$temp2['slides'] = $explode2[0].'_slides.'.$explode2[1];
 				$result2[] = (object) $temp2;
 			}
@@ -186,9 +186,9 @@ class Home extends MY_Controller {
 		$param['limit'] = 2;
 		$query = $this->testimony_model->lists($param);
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
-			return $query->result();
+			return $query->result;
 		}
 		else
 		{
@@ -200,7 +200,7 @@ class Home extends MY_Controller {
 	{
 		$query = $this->preferences_model->info(array('name' => 'vision'));
 		
-		if ($query->num_rows() > 0)
+		if ($query->code == 200)
 		{
 			return $query->row();
 		}
