@@ -6,7 +6,7 @@
                 <div class="slider-wrapper theme-default">
                     <div id="nivoSlider" class="nivoSlider">
                         <?php foreach ($slider as $row) {
-                            echo '<img src="'.$row->slides.'" data-thumb="'.$row->slides.'" alt="'.$row->title.'" />';
+                            echo '<img src="'.$row->slides.'" data-thumb="'.$row->slides.'" />';
                         } ?>
                     </div>
                     <div id="htmlcaption" class="nivo-html-caption"></div>

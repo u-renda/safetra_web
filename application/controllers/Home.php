@@ -12,6 +12,7 @@ class Home extends MY_Controller {
 		$this->load->model('media_model');
 		$this->load->model('preferences_model');
 		$this->load->model('program_model');
+		$this->load->model('slider_model');
 		$this->load->model('testimony_model');
     }
 	
@@ -142,37 +143,21 @@ class Home extends MY_Controller {
 	{
 		$param = array();
 		$param['limit'] = 4;
-		$query = $this->article_model->lists($param);
-		$query2 = $this->media_model->lists($param);
+		$query = $this->slider_model->lists($param);
 		
 		if ($query->code == 200)
 		{
 			$result = array();
 			foreach ($query->result as $row)
 			{
-				$explode = explode('.', $row->media);
+				$explode = explode('.', $row->slider_url);
 				
 				$temp = array();
-				$temp['title'] = $row->title;
 				$temp['slides'] = $explode[0].'_slides.'.$explode[1];
 				$result[] = (object) $temp;
 			}
 			
-			$result2 = array();
-			foreach ($query2->result as $row2)
-			{
-				$explode2 = explode('.', $row2->media_url);
-				
-				$temp2 = array();
-				$temp2['title'] = $row2->media_url;
-				$temp2['slides'] = $explode2[0].'_slides.'.$explode2[1];
-				$result2[] = (object) $temp2;
-			}
-			
-			$result3 = array_merge($result, $result2);
-			$slice = array_slice($result3, 0, 4);
-			
-			return (object) $slice;
+			return (object) $result;
 		}
 		else
 		{
