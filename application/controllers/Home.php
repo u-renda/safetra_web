@@ -153,7 +153,15 @@ class Home extends MY_Controller {
 				$explode = explode('.', $row->slider_url);
 				
 				$temp = array();
-				$temp['slides'] = $explode[0].'_slides.'.$explode[1];
+				if(is_bool(LOCALHOST) || LOCALHOST == 'localhost')
+				{
+					$temp['slides'] = $explode[0].'_slides.'.$explode[1];
+				}
+				else
+				{
+					$temp['slides'] = $explode[0].'.'.$explode[1].'.'.$explode[2].'_slides.'.$explode[3];
+				}
+				
 				$result[] = (object) $temp;
 			}
 			

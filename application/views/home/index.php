@@ -24,12 +24,12 @@
                             <span>Lihat fitur dan program kami yang tersedia.</span>
                         </p>
                     </div>
-                    <div class="col-md-3">
+                    <!--<div class="col-md-3">
                         <div class="get-started">
                             <a href="<?php echo $this->config->item('link_login'); ?>" class="btn btn-lg btn-primary">Mulai Sekarang!</a>
                             <div class="learn-more">atau <a href="#">pelajari lebih lanjut.</a></div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="feature-box-info">
                         <h4 class="mb-none">Nice Location</h4>
-                        <p class="tall">Lorem ipsum dolor sit amet, consectetur adipiscing <span class="alternative-font">metus.</span> elit. Quisque rutrum pellentesque imperdiet.</p>
+                        <p class="tall">Lokasi pelatihan yang kami sediakan adalah lokasi yang nyaman sehingga peserta dapat fokus dalam mennyerap materi pelatihan.</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="feature-box-info">
                         <h4 class="mb-none">Customer Support</h4>
-                        <p class="tall">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                        <p class="tall">Pelayanan yang kami miliki sesuai dengan keinginan konsumen.</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="feature-box-info">
                         <h4 class="mb-none">Certification</h4>
-                        <p class="tall">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                        <p class="tall">Sertifikasi yang kami keluarkan sudah sesuai dengan perundang-undangan di negara Indonesia. Sehingga peserta dapat mempertanggungjawabkan materi yang didapat.</p>
                     </div>
                 </div>
             </div>
