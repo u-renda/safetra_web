@@ -18,6 +18,7 @@
                 <?php foreach ($article as $row) { ?>
                 <article class="post post-medium">
                     <div class="row">
+                        <?php if ($row->media != '') { ?>
                         <div class="col-md-5">
                             <div class="post-image">
                                 <div>
@@ -28,6 +29,9 @@
                             </div>
                         </div>
                         <div class="col-md-7">
+                        <?php } else { ?>
+                        <div class="col-md-12">
+                        <?php } ?>
                             <div class="post-content">
                                 <h2><a href="<?php echo $this->config->item('link_article_detail').$row->slug; ?>"><?php echo $row->title; ?></a></h2>
                                 <p><?php echo $row->content_new; ?> [...]</p>

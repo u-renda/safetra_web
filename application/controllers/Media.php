@@ -22,7 +22,7 @@ class Media extends MY_Controller {
 			if ($query->code == 200)
 			{
 				$data = array();
-				$result = $query->row();
+				$result = $query->result;
 				
 				$temp = array();
 				$temp['title'] = $result->title;
