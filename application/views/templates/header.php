@@ -81,6 +81,7 @@
 										<ul class="header-social-icons social-icons hidden-xs">
 											<li class="social-icons-facebook"><a href="<?php echo $this->config->item('safetra_facebook'); ?>" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
 											<li class="social-icons-twitter"><a href="<?php echo $this->config->item('safetra_twitter'); ?>" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+											<li class="social-icons-instagram"><a href="<?php echo $this->config->item('safetra_instagram'); ?>" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
 										</ul>
 										<?php $this->load->view('templates/navigation'); ?>
 									</div>
