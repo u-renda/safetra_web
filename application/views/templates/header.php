@@ -53,7 +53,7 @@
 							<div class="header-column">
 								<div class="header-logo">
 									<a href="<?php echo base_url(); ?>">
-										<img alt="Safetra Indonesia" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="<?php echo base_url('assets/images').'/logo.png'; ?>">
+										<img alt="Safetra Indonesia" width="180" height="80" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="<?php echo base_url('assets/images').'/logo.png'; ?>">
 									</a>
 								</div>
 							</div>

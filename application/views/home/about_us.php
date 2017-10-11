@@ -14,27 +14,15 @@
 <!--Tentang Safetra-->
 <div class="container">
     <div class="row mt-xlg">
-        <div class="col-md-6">
-            <h2>Tentang <strong>Safetra</strong></h2>
-            <p><?php echo $about_us; ?></p>
+        <div class="col-md-12">
+            <h2>Mengapa <strong>Safetra?</strong></h2>
+            <p><?php echo $about_us->content; ?></p>
             <h2>Visi <strong>Safetra</strong></h2>
             <p><?php echo $vision->content; ?></p>
             <h2>Misi <strong>Safetra</strong></h2>
             <p><?php echo $mision->content; ?></p>
-        </div>
-        <div class="col-md-6">
-            <div class="progress-bars">
-                <?php foreach ($program as $row) { ?>
-                <div class="progress-label">
-                    <span><?php echo $row->name; ?></span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-primary" data-appear-progress-animation="<?php echo $row->percentage.'%'; ?>" data-appear-animation-delay="300">
-                        <span class="progress-bar-tooltip"><?php echo $row->percentage.'%'; ?></span>
-                    </div>
-                </div>
-                <?php } ?>
-            </div>
+            <h2>Nilai-nilai dan <strong>Filosofi Persusahaan</strong></h2>
+            <p><?php echo $filosofi->content; ?></p>
         </div>
     </div>
 </div>

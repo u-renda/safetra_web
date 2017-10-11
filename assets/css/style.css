@@ -11,6 +11,18 @@
 .pt0 {
   padding-top: 0px !important;
 }
+.pl0 {
+  padding-left: 0px !important;
+}
 .testimony-background {
   background-image: url('../images/parallax-people.jpg') !important;
+}
+.font14 {
+  font-size: 14px !important;
+}
+.pos-static {
+  position: static !important;
+}
+#footer {
+  margin-top: 0px;
 }

@@ -18,18 +18,16 @@
         <div class="col-md-12">
             <div class="home-intro home-intro-compact">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <p>
-                            Pilihan terbaik untuk pelatihan <em>Keselamatan dan Kesehatan Kerja</em>
-                            <span>Lihat fitur dan program kami yang tersedia.</span>
+                            Pilihan terbaik untuk pelatihan <span><em>Keselamatan dan Kesehatan Kerja</em></span>
                         </p>
                     </div>
-                    <!--<div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="get-started">
-                            <a href="<?php echo $this->config->item('link_login'); ?>" class="btn btn-lg btn-primary">Mulai Sekarang!</a>
-                            <div class="learn-more">atau <a href="#">pelajari lebih lanjut.</a></div>
+                            <a href="<?php echo $this->config->item('link_contact_us'); ?>" class="btn btn-primary">Hubungi kami SEKARANG!</a>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,42 +37,63 @@
 <!--Our Services-->
 <section class="section section-no-background m-none pt0">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 center">
-                <h2>Our <strong>Services</strong></h2>
-            </div>
-        </div>
-        <div class="row mt-lg">
+        <div class="row mb-xl">
             <div class="col-md-4">
-                <div class="feature-box feature-box-style-2">
-                    <div class="feature-box-icon">
-                        <i class="fa fa-map-marker"></i>
+                <h2 class="mb-xl"><strong>Siapa</strong> Kami</h2>
+                <p>SAFETRA adalah perusahaan jasa Keselamatan dan Kesehatan Kerja (K3) yang didirikan oleh beberapa praktisi K3 yang berpengalama lebih dari 10 tahun di bidang migas, tambang, konstruksi, penerbangan, marine, dan manufacture.</p>
+
+                <a class="btn btn-borders btn-default mr-xs mb-sm" href="<?php echo $this->config->item('link_about_us'); ?>">Baca Selengkapnya</a>
+            </div>
+            <div class="col-md-8">
+                <h2 class="mb-xl"><strong>Layanan</strong> Kami</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
+                            <div class="feature-box-icon">
+                                <i class="icon-user-following icons"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="mb-sm">Customer Support</h4>
+                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-box-info">
-                        <h4 class="mb-none">Nice Location</h4>
-                        <p class="tall">Lokasi pelatihan yang kami sediakan adalah lokasi yang nyaman sehingga peserta dapat fokus dalam mennyerap materi pelatihan.</p>
+                    <div class="col-md-6">
+                        <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
+                            <div class="feature-box-icon">
+                                <i class="icon-layers icons"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="mb-sm">Sliders</h4>
+                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2">
-                    <div class="feature-box-icon">
-                        <i class="fa fa-group"></i>
+
+                <div class="row mt-md">
+                    <div class="col-md-6">
+                        <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
+                            <div class="feature-box-icon">
+                                <i class="icon-star icons"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="mb-sm">Icons</h4>
+                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-box-info">
-                        <h4 class="mb-none">Customer Support</h4>
-                        <p class="tall">Pelayanan yang kami miliki sesuai dengan keinginan konsumen.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2">
-                    <div class="feature-box-icon">
-                        <i class="fa fa-file-text"></i>
-                    </div>
-                    <div class="feature-box-info">
-                        <h4 class="mb-none">Certification</h4>
-                        <p class="tall">Sertifikasi yang kami keluarkan sudah sesuai dengan perundang-undangan di negara Indonesia. Sehingga peserta dapat mempertanggungjawabkan materi yang didapat.</p>
+                    <div class="col-md-6">
+                        <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
+                            <div class="feature-box-icon">
+                                <i class="icon-drop icons"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="mb-sm">Colors</h4>
+                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +106,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 center">
-                <h2>Our <strong>Client</strong></h2>
+                <h2>Klien <strong>Kami</strong></h2>
             </div>
         </div>
         <div class="row">
@@ -130,29 +149,84 @@
     </div>
 </section>
 <!--END Testimoni-->
-<!--Posts-->
-<div class="container">
-    <div class="row mt-xl">
-        <div class="col-md-12 center">
-            <h2 class="mt-xl mb-xl">Latest <strong>Posts</strong></h2>
-        </div>
-    </div>
-    <div class="row">
-        <?php foreach($posts as $row) { ?>
-        <div class="col-md-4">
-            <div class="recent-posts mt-xl">
-                <article class="post">
-                    <div class="date">
-                        <span class="day"><?php echo $row->day; ?></span>
-                        <span class="month"><?php echo $row->month; ?></span>
+<!--Pelatihan-->
+<section class="section section-no-background m-none">
+    <div class="container">
+        <div class="row">
+            <div class="pricing-table princig-table-flat">
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan">
+                        <h3>Implementasi <span>OH dan IH</span></h3>
+                        <ul>
+                            <li class="pl-sm pr-sm">Occupational Health dan Industrial Higiene <strong>(OH-IH)</strong></li>
+                            <li class="pl-sm pr-sm">Membentuk lingkungan kerja yang <strong>aman dan sehat</strong></li>
+                            <li class="pl-sm pr-sm">Membuat program lingkungan kerja yang <strong>aman sehat</strong></li>
+                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                        </ul>
                     </div>
-                    <h4><a href="<?php echo $this->config->item('link_article_detail').$row->slug; ?>"><?php echo $row->title; ?></a></h4>
-                    <p><?php echo $row->new_content; ?></p>
-                    <a class="btn btn-borders btn-default mt-md mb-xl" href="<?php echo $this->config->item('link_article_detail').$row->slug; ?>">Read More</a>
-                </article>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan most-popular">
+                        <h3>Bahavior Based <span>Safety</span></h3>
+                        <ul>
+                            <li>Pelatihan pamungkas <strong>K3</strong></li>
+                            <li>Merubah perilaku <strong>pekerja</strong></li>
+                            <li>Melibatkan <strong>semua unsur</strong> perusahaan</li>
+                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan">
+                        <h3>Contractor & Tenan Control Safety Managment System</h3>
+                        <ul>
+                            <li>Mewujudkan <strong>zero accident</strong></li>
+                            <li>Pengendalian <strong>contractor dan tenan</strong></li>
+                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan">
+                        <h3>Defensive Driving & Riding <span>Training</span></h3>
+                        <ul>
+                            <li>Memastikan driver mengemudi dengan <strong>baik</strong></li>
+                            <li>Melatih pada unsur <strong>teknis</strong></li>
+                            <li>Melatih pembentukan <strong>perilaku</strong></li>
+                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <?php } ?>
     </div>
-</div>
+</section>
+<!--END Pelatihan-->
+<!--Posts-->
+<section class="section m-none">
+    <div class="container">
+        <div class="row mt-xl">
+            <div class="col-md-12 center">
+                <h2 class="mt-xl mb-xl">Latest <strong>Posts</strong></h2>
+            </div>
+        </div>
+        <div class="row">
+            <?php foreach($posts as $row) { ?>
+            <div class="col-md-4">
+                <div class="recent-posts mt-xl">
+                    <article class="post">
+                        <div class="date">
+                            <span class="day"><?php echo $row->day; ?></span>
+                            <span class="month"><?php echo $row->month; ?></span>
+                        </div>
+                        <h4><a href="<?php echo $this->config->item('link_article_detail').$row->slug; ?>"><?php echo $row->title; ?></a></h4>
+                        <p><?php echo $row->new_content; ?></p>
+                        <a class="btn btn-borders btn-default mt-md mb-xl" href="<?php echo $this->config->item('link_article_detail').$row->slug; ?>">Read More</a>
+                    </article>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>
 <!--END Posts-->

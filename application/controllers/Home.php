@@ -27,7 +27,15 @@ class Home extends MY_Controller {
 			$program = $query->result;
 		}
 		
+		$query2 = $this->preferences_model->info(array('name' => 'about us'));
+		
+		if ($query2->code == 200)
+		{
+			$data['about_us'] = $query2->result;
+		}
+		
 		$data['admin'] = $this->admin();
+		$data['filosofi'] = $this->filosofi();
 		$data['vision'] = $this->vision();
 		$data['mision'] = $this->mision();
 		$data['program'] = $program;
@@ -74,6 +82,20 @@ class Home extends MY_Controller {
 		$data = array();
 		$data['view_content'] = 'home/contact_us';
 		$this->display_view('templates/frame', $data);
+	}
+	
+	function filosofi()
+	{
+		$query = $this->preferences_model->info(array('name' => 'filosofi'));
+		
+		if ($query->code == 200)
+		{
+			return $query->result;
+		}
+		else
+		{
+			return FALSE;
+		}
 	}
 	
 	function index()
@@ -176,7 +198,7 @@ class Home extends MY_Controller {
 	function testimony()
 	{
 		$param = array();
-		$param['limit'] = 2;
+		$param['limit'] = 5;
 		$query = $this->testimony_model->lists($param);
 		
 		if ($query->code == 200)

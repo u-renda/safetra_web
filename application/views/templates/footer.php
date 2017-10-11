@@ -1,24 +1,29 @@
             </div>
-			<footer class="short" id="footer">
+			<footer class="light" id="footer">
 				<div class="container">
 					<div class="row">
+						<div class="footer-ribbon">
+							<span>Hubungi Kami</span>
+						</div>
 						<div class="col-md-8">
-							<h4>Tentang Safetra</h4>
-							<p><?php echo $about_us; ?> ... <a href="<?php echo $this->config->item('link_about_us'); ?>" class="btn-flat btn-xs">View More <i class="fa fa-arrow-right"></i></a></p>
+							<img src="<?php echo base_url('assets/images').'/logo.png'; ?>" alt="Safetra" width="30%">
+							<img src="<?php echo base_url('assets/images').'/k3.jpg'; ?>" alt="Keselamatan & Kesehatan Kerja" width="30%">
 							<hr class="light">
 						</div>
 						<div class="col-md-3 col-md-offset-1">
-							<h5 class="mb-sm">Hubungi Kami</h5>
-							<span class="phone"><?php echo $this->config->item('safetra_phone'); ?></span>
-							<ul class="list list-icons list-icons-sm">
-								<li><i class="fa fa-envelope"></i> <a href="mailto:marketing@safetra.co.id"><?php echo $this->config->item('email_marketing'); ?></a></li>
-								<li><i class="fa fa-envelope"></i> <a href="mailto:safetraindonesia@gmail.com"><?php echo $this->config->item('email_gmail'); ?></a></li>
-							</ul>
-							<ul class="social-icons">
-								<li class="social-icons-facebook"><a href="<?php echo $this->config->item('safetra_facebook'); ?>" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-								<li class="social-icons-twitter"><a href="<?php echo $this->config->item('safetra_twitter'); ?>" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-								<li class="social-icons-instagram"><a href="<?php echo $this->config->item('safetra_instagram'); ?>" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+							<div class="contact-details">
+								<h4>Hubungi Kami</h4>
+								<span class="phone"><?php echo $this->config->item('safetra_phone'); ?></span>
+								<ul class="contact">
+									<li><p><i class="fa fa-envelope"></i> <a href="mailto:marketing@safetra.co.id"><?php echo $this->config->item('email_marketing'); ?></a></p></li>
+									<li><p><i class="fa fa-envelope"></i> <a href="mailto:safetraindonesia@gmail.com"><?php echo $this->config->item('email_gmail'); ?></a></p></li>
+								</ul>
+								<ul class="social-icons">
+									<li class="social-icons-facebook"><a href="<?php echo $this->config->item('safetra_facebook'); ?>" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li class="social-icons-twitter"><a href="<?php echo $this->config->item('safetra_twitter'); ?>" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li class="social-icons-instagram"><a href="<?php echo $this->config->item('safetra_instagram'); ?>" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

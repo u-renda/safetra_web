@@ -32,18 +32,14 @@
                     ?>
                 </ul>
             </li>
-            <li class="nav-parent">
-                <a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a>
+            <li class="dropdown nav-parent">
+                <a class="dropdown-toggle" href="#program">
+                    Media
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a></li>
+                </ul>
             </li>
-            <li class="nav-parent">
-                <a href="<?php echo $this->config->item('link_about_us'); ?>">Tentang Kami</a>
-            </li>
-            <li class="nav-parent">
-                <a href="<?php echo $this->config->item('link_contact_us'); ?>">Hubungi Kami</a>
-            </li>
-            <!--<li class="nav-parent">
-                <a href="<?php echo $this->config->item('link_login'); ?>">Login / Register</a>
-            </li>-->
         </ul>
     </nav>
 </div>
