@@ -64,7 +64,9 @@ class Home extends MY_Controller {
 	function client()
 	{
 		$param = array();
-		$param['limit'] = 8;
+		$param['limit'] = 10;
+		$param['order'] = 'created_date';
+		$param['sort'] = 'desc';
 		$query = $this->client_model->lists($param);
 		
 		if ($query->code == 200)

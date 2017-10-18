@@ -15,40 +15,59 @@
         </div>
     </div>
 </section>
-<div class="container">
-    <h2><strong>Tujuan</strong> Program</h2>
+<div class="container" id="page_program">
+    <h2><strong>Pengertian</strong> Pelatihan</h2>
     <div class="row">
         <div class="col-md-12">
-            <p><?php echo $program->program_objective; ?></p>
+            <p><?php echo $program->introduction; ?></p>
         </div>
     </div>
     <hr class="tall">
-    <h2><strong>Tujuan</strong> Pelatihan</h2>
     <div class="row">
         <div class="col-md-12">
-            <p><?php echo $program->training_purpose; ?></p>
+            <div class="toggle toggle-tertiary toggle-lg" data-plugin-toggle>
+                <?php if (empty($program_sub) == FALSE) { ?>
+                <section class="toggle">
+                    <label><strong>Pelatihan yang Tersedia</strong></label>
+                    <div class="toggle-content">
+                        <ul>
+                        <?php foreach ($program_sub as $row) { ?>
+                            <li><a href="<?php echo $this->config->item('link_program').'/'.$row->slug; ?>"><?php echo $row->name; ?></a></li>
+                        <?php } ?>
+                        </ul>
+                    </div>
+                </section>
+                <?php } ?>
+                <section class="toggle">
+                    <label><strong>Tujuan Pelatihan</strong></label>
+                    <div class="toggle-content">
+                        <p><?php echo $program->training_purpose; ?></p>
+                    </div>
+                </section>
+                <section class="toggle">
+                    <label><strong>Persyaratan Peserta</strong></label>
+                    <div class="toggle-content">
+                        <p><?php echo $program->target_participant; ?></p>
+                    </div>
+                </section>
+                <section class="toggle">
+                    <label><strong>Materi Pelatihan</strong></label>
+                    <div class="toggle-content">
+                        <p><?php echo $program->course_content; ?></p>
+                    </div>
+                </section>
+                <section class="toggle">
+                    <label><strong>Informasi Lainnya</strong></label>
+                    <div class="toggle-content">
+                        <p><?php echo $program->others; ?></p>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-    <hr class="tall">
-    <h2><strong>Persyaratan</strong> Peserta</h2>
     <div class="row">
-        <div class="col-md-12">
-            <p><?php echo $program->requirements_of_participant; ?></p>
+        <div class="col-md-12 mb-lg mt-lg">
+            <p><a type="button" class="btn btn-borders btn-primary btn-lg" href="<?php echo $this->config->item('link_login'); ?>">Daftarkan diri Anda sekarang!</a></p>
         </div>
     </div>
-    <hr class="tall">
-    <h2><strong>Materi</strong> Pelatihan</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <p><?php echo $program->training_material; ?></p>
-        </div>
-    </div>
-    <hr class="tall">
-    <h2><strong>Informasi</strong> Lainnya</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <p><?php echo $program->others; ?></p>
-        </div>
-    </div>
-    <p class="mt-lg"><a type="button" class="btn btn-borders btn-primary btn-lg" href="<?php echo $this->config->item('link_login'); ?>">Daftarkan diri Anda sekarang!</a></p>
 </div>

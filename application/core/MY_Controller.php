@@ -21,12 +21,6 @@ class MY_Controller extends CI_Controller
             foreach ($query2->result as $key => $val)
             {
                 $program[$key] = $val;
-                $query3 = $this->program_sub_model->lists(array('id_program' => $val->id_program));
-                
-                if ($query3->code == 200)
-                {
-                    $program[$key]->program_sub = $query3->result;
-                }
             }
         }
         

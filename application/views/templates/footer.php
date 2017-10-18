@@ -15,8 +15,8 @@
 								<h4>Hubungi Kami</h4>
 								<span class="phone"><?php echo $this->config->item('safetra_phone'); ?></span>
 								<ul class="contact">
+									<li><p><i class="fa fa-whatsapp"></i> <?php echo $this->config->item('safetra_whatsapp'); ?></p></li>
 									<li><p><i class="fa fa-envelope"></i> <a href="mailto:marketing@safetra.co.id"><?php echo $this->config->item('email_marketing'); ?></a></p></li>
-									<li><p><i class="fa fa-envelope"></i> <a href="mailto:safetraindonesia@gmail.com"><?php echo $this->config->item('email_gmail'); ?></a></p></li>
 								</ul>
 								<ul class="social-icons">
 									<li class="social-icons-facebook"><a href="<?php echo $this->config->item('safetra_facebook'); ?>" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
