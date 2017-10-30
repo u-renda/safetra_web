@@ -58,3 +58,5 @@ $route['contact_us'] = 'home/contact_us';
 $route['index'] = 'home/index';
 $route['media/article_detail/(:any)'] = 'media/article_detail/$1';
 $route['program/(:any)'] = 'program/index/$1';
+$route['register'] = 'login/register';
+$route['register_success'] = 'login/register_success';

@@ -9,10 +9,13 @@
                 </ul>
             </div>
         </div>
+        <?php if (empty($program_sub) == TRUE) { ?>
         <div class="row">
             <div class="col-md-12">
+                <?php echo '<strong>'.$program->program->name.'</strong>'; ?>
             </div>
         </div>
+        <?php } ?>
     </div>
 </section>
 <div class="container" id="page_program">
@@ -37,31 +40,39 @@
                         </ul>
                     </div>
                 </section>
-                <?php } ?>
+                <?php }
+                if ($program->training_purpose != '') { ?>
                 <section class="toggle">
                     <label><strong>Tujuan Pelatihan</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->training_purpose; ?></p>
                     </div>
                 </section>
+                <?php }
+                if ($program->target_participant != '') { ?>
                 <section class="toggle">
                     <label><strong>Persyaratan Peserta</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->target_participant; ?></p>
                     </div>
                 </section>
+                <?php }
+                if ($program->course_content != '') { ?>
                 <section class="toggle">
                     <label><strong>Materi Pelatihan</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->course_content; ?></p>
                     </div>
                 </section>
+                <?php }
+                if ($program->others != '') { ?>
                 <section class="toggle">
                     <label><strong>Informasi Lainnya</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->others; ?></p>
                     </div>
                 </section>
+                <?php } ?>
             </div>
         </div>
     </div>

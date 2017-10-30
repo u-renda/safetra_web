@@ -26,7 +26,7 @@
             <div class="col-md-6">
                 <h2>Jam Kerja</h2>
                 <ul class="list list-icons list-dark mt-xlg">
-                    <li><i class="fa fa-clock-o"></i> Senin - Jumat 09:00 - 17:00 WIB</li>
+                    <li><i class="fa fa-clock-o"></i> Senin - Jumat 08:00 - 17:00 WIB</li>
                     <li><i class="fa fa-clock-o"></i> Sabtu, Minggu & Hari Libur Nasional - Tutup</li>
                 </ul>
             </div>

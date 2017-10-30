@@ -546,3 +546,4 @@ $config['link_login'] = $config['base_url'].'login';
 $config['link_gallery'] = $config['base_url'].'media/gallery';
 $config['link_program'] = $config['base_url'].'program';
 $config['link_register'] = $config['base_url'].'register';
+$config['link_register_success'] = $config['base_url'].'register_success';
