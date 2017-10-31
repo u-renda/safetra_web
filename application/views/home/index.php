@@ -161,7 +161,7 @@
                             <li class="pl-sm pr-sm">Occupational Health dan Industrial Higiene <strong>(OH-IH)</strong></li>
                             <li class="pl-sm pr-sm">Membentuk lingkungan kerja yang <strong>aman dan sehat</strong></li>
                             <li class="pl-sm pr-sm">Membuat program lingkungan kerja yang <strong>aman sehat</strong></li>
-                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                            <li><a class="btn btn-default" href="<?php echo $this->config->item('link_program').'/occupation-health-safety-ohs'; ?>">Baca Selengkapnya</a></li>
                         </ul>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                             <li>Pelatihan pamungkas <strong>K3</strong></li>
                             <li>Merubah perilaku <strong>pekerja</strong></li>
                             <li>Melibatkan <strong>semua unsur</strong> perusahaan</li>
-                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                            <li><a class="btn btn-default" href="<?php echo $this->config->item('link_program').'/occupation-health-safety-ohs'; ?>">Baca Selengkapnya</a></li>
                         </ul>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <ul>
                             <li>Mewujudkan <strong>zero accident</strong></li>
                             <li>Pengendalian <strong>contractor dan tenan</strong></li>
-                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                            <li><a class="btn btn-default" href="<?php echo $this->config->item('link_program').'/occupation-health-safety-ohs'; ?>">Baca Selengkapnya</a></li>
                         </ul>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                             <li>Memastikan driver mengemudi dengan <strong>baik</strong></li>
                             <li>Melatih pada unsur <strong>teknis</strong></li>
                             <li>Melatih pembentukan <strong>perilaku</strong></li>
-                            <li><a class="btn btn-default" href="#">Baca Selengkapnya</a></li>
+                            <li><a class="btn btn-default" href="<?php echo $this->config->item('link_program').'/occupation-health-safety-ohs'; ?>">Baca Selengkapnya</a></li>
                         </ul>
                     </div>
                 </div>

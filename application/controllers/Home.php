@@ -113,6 +113,19 @@ class Home extends MY_Controller {
 		//$this->load->view('coming_soon', $data);
 	}
 	
+	function under_maintenance()
+	{
+		$data = array();
+		$query = $this->preferences_model->info(array('name' => 'about us'));
+		
+		if ($query->code == 200)
+		{
+			$data['about_us'] = $query->result->content;
+		}
+		
+		$this->load->view('home/under_maintenance', $data);
+	}
+	
 	function mision()
 	{
 		$query = $this->preferences_model->info(array('name' => 'mision'));
