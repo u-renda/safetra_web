@@ -51,22 +51,22 @@
                     <div class="col-md-6">
                         <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
                             <div class="feature-box-icon">
-                                <i class="icon-user-following icons"></i>
+                                <i class="fa fa-users"></i>
                             </div>
                             <div class="feature-box-info">
                                 <h4 class="mb-sm">Customer Support</h4>
-                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
+                                <p class="mb-lg">Kami memiliki layanan customer support yang bisa membantu Anda dengan info yang lebih lengkap.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
                             <div class="feature-box-icon">
-                                <i class="icon-layers icons"></i>
+                                <i class="fa fa-file-text"></i>
                             </div>
                             <div class="feature-box-info">
-                                <h4 class="mb-sm">Sliders</h4>
-                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                                <h4 class="mb-sm">Sertification</h4>
+                                <p class="mb-lg">Kami selalu meluncurkan sertifikat yang terjamin untuk setiap peserta yang mengikuti pelatihan kami.</p>
                             </div>
                         </div>
                     </div>
@@ -76,22 +76,22 @@
                     <div class="col-md-6">
                         <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
                             <div class="feature-box-icon">
-                                <i class="icon-star icons"></i>
+                                <i class="fa fa-map-marker"></i>
                             </div>
                             <div class="feature-box-info">
-                                <h4 class="mb-sm">Icons</h4>
-                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
+                                <h4 class="mb-sm">Location</h4>
+                                <p class="mb-lg">Kami menyediakan tempat pelatihan yang nyaman dan sesuai dengan keinginan pelanggan kami.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
                             <div class="feature-box-icon">
-                                <i class="icon-drop icons"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                             <div class="feature-box-info">
-                                <h4 class="mb-sm">Colors</h4>
-                                <p class="mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                                <h4 class="mb-sm">Social Media</h4>
+                                <p class="mb-lg">Kami memiliki sosial media yang lengkap untuk membantu setiap kegiatan kami.</p>
                             </div>
                         </div>
                     </div>

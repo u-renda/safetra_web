@@ -13,7 +13,7 @@
 </section>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-xlg">
             <div class="blog-posts single-post">
                 <article class="post post-large blog-single-post">
                     <?php if ($article->media != '') { ?>
