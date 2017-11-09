@@ -27,3 +27,23 @@ if ( ! function_exists('send_email')) {
         return $send;
     }
 }
+
+if ( ! function_exists('safetra_whatsapp')) {
+    function safetra_whatsapp()
+    {
+        $CI =& get_instance();
+		$CI->load->model('preferences_model');
+		
+        $query = $CI->preferences_model->info(array('slug' => 'whatsapp'));
+		
+		if ($query->code == 200)
+		{
+			$result = $query->result->content;
+			return $result;
+		}
+		else
+		{
+			return FALSE;
+		}
+    }
+}

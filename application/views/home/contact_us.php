@@ -19,7 +19,7 @@
                 <ul class="list list-icons list-icons-style-3 mt-xlg">
                     <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:<?php echo $this->config->item('email_marketing'); ?>"><?php echo $this->config->item('email_marketing'); ?></a></li>
                     <li><i class="fa fa-phone"></i> <strong>Telp:</strong> <?php echo $this->config->item('safetra_phone'); ?></li>
-                    <li><i class="fa fa-whatsapp"></i> <strong>Whatsapp:</strong> <?php echo $this->config->item('safetra_whatsapp'); ?></li>
+                    <li><i class="fa fa-whatsapp"></i> <strong>Whatsapp:</strong> <?php echo safetra_whatsapp(); ?></li>
                     <li><i class="fa fa-map-marker"></i> <strong>Alamat:</strong> <?php echo $this->config->item('safetra_address'); ?></li>
                 </ul>
             </div>

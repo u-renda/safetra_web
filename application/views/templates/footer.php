@@ -16,7 +16,7 @@
 								<span class="phone"><?php echo $this->config->item('safetra_phone'); ?></span>
 								<ul class="contact">
 									<?php if ($this->config->item('safetra_whatsapp') != '') { ?>
-									<li><p><i class="fa fa-whatsapp"></i> <?php echo $this->config->item('safetra_whatsapp'); ?></p></li>
+									<li><p><i class="fa fa-whatsapp"></i> <?php echo safetra_whatsapp(); ?></p></li>
 									<?php } ?>
 									<li><p><i class="fa fa-envelope"></i> <a href="mailto:marketing@safetra.co.id"><?php echo $this->config->item('email_marketing'); ?></a></p></li>
 								</ul>
