@@ -536,7 +536,6 @@ $config['safetra_phone2'] = '(021) 2274-0385';
 $config['safetra_facebook'] = 'https://www.facebook.com/safetraindonesia.official';
 $config['safetra_twitter'] = 'https://twitter.com/safetraID';
 $config['safetra_instagram'] = 'https://www.instagram.com/safetra.id';
-$config['safetra_whatsapp'] = '081316677012 (telp & whatsapp)';
 
 /* LINK */
 $config['link_about_us'] = $config['base_url'].'about_us';
