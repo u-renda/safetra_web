@@ -8,6 +8,7 @@
 						<div class="col-md-8">
 							<img src="<?php echo base_url('assets/images').'/logo.png'; ?>" alt="Safetra" width="30%">
 							<img src="<?php echo base_url('assets/images').'/k3.jpg'; ?>" alt="Keselamatan & Kesehatan Kerja" width="30%">
+							<img src="<?php echo base_url('assets/images').'/kemenaker.jpg'; ?>" alt="Kementerian Ketenagakerjaan Republik Indonesia" width="30%">
 							<hr class="light">
 						</div>
 						<div class="col-md-3 col-md-offset-1">
@@ -15,8 +16,9 @@
 								<h4>Hubungi Kami</h4>
 								<span class="phone"><?php echo $this->config->item('safetra_phone'); ?></span>
 								<ul class="contact">
+									<li><p><i class="fa fa-phone"></i><?php echo $this->config->item('safetra_phone2'); ?></p></li>
 									<?php if ($this->config->item('safetra_whatsapp') != '') { ?>
-									<li><p><i class="fa fa-whatsapp"></i> <?php echo safetra_whatsapp(); ?></p></li>
+									<li><p><i class="fa fa-whatsapp"></i> <?php echo $this->config->item('safetra_whatsapp'); ?></p></li>
 									<?php } ?>
 									<li><p><i class="fa fa-envelope"></i> <a href="mailto:marketing@safetra.co.id"><?php echo $this->config->item('email_marketing'); ?></a></p></li>
 								</ul>

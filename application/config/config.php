@@ -532,9 +532,11 @@ $config['safetra_api'] = API_HOST;
 $config['safetra_address'] = 'Taman Mutiara, Jl. Bhakti No. A 3, Ciputat Kota, Tangerang Selatan';
 $config['safetra_key'] = 'bd6fb882067e6ok56GR93376cd411ee';
 $config['safetra_phone'] = '(021) 2904-7017';
+$config['safetra_phone2'] = '(021) 2274-0385';
 $config['safetra_facebook'] = 'https://www.facebook.com/safetraindonesia.official';
 $config['safetra_twitter'] = 'https://twitter.com/safetraID';
 $config['safetra_instagram'] = 'https://www.instagram.com/safetra.id';
+$config['safetra_whatsapp'] = '081316677012 (telp & whatsapp)';
 
 /* LINK */
 $config['link_about_us'] = $config['base_url'].'about_us';

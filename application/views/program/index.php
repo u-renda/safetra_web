@@ -30,7 +30,7 @@
         <div class="col-md-12">
             <div class="toggle toggle-tertiary toggle-lg" data-plugin-toggle>
                 <?php if (empty($program_sub) == FALSE) { ?>
-                <section class="toggle">
+                <section class="toggle active">
                     <label><strong>Pelatihan yang Tersedia</strong></label>
                     <div class="toggle-content">
                         <ul>
@@ -42,7 +42,7 @@
                 </section>
                 <?php }
                 if ($program->training_purpose != '') { ?>
-                <section class="toggle">
+                <section class="toggle active">
                     <label><strong>Tujuan Pelatihan</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->training_purpose; ?></p>
@@ -50,7 +50,7 @@
                 </section>
                 <?php }
                 if ($program->target_participant != '') { ?>
-                <section class="toggle">
+                <section class="toggle active">
                     <label><strong>Persyaratan Peserta</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->target_participant; ?></p>
@@ -58,7 +58,7 @@
                 </section>
                 <?php }
                 if ($program->course_content != '') { ?>
-                <section class="toggle">
+                <section class="toggle active">
                     <label><strong>Materi Pelatihan</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->course_content; ?></p>
@@ -66,7 +66,7 @@
                 </section>
                 <?php }
                 if ($program->others != '') { ?>
-                <section class="toggle">
+                <section class="toggle active">
                     <label><strong>Informasi Lainnya</strong></label>
                     <div class="toggle-content">
                         <p><?php echo $program->others; ?></p>
