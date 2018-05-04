@@ -27,6 +27,11 @@
                     <li><a href="<?php echo $this->config->item('link_article'); ?>">Artikel</a></li>
                 </ul>
             </li>
+            <li class="nav-parent">
+                <a href="<?php echo $this->config->item('link_lowongan'); ?>">
+                    Lowongan Pekerjaan
+                </a>
+            </li>
         </ul>
     </nav>
 </div>
